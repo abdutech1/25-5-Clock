@@ -114,7 +114,7 @@ export default function PomodoroClock() {
             >
               -
             </button>
-            <span id="break-length" className="fs-4">
+            <span id="break-length" className="fs-5 fs-md-3">
               {breakLength}
             </span>
             <button
@@ -128,8 +128,8 @@ export default function PomodoroClock() {
         </div>
 
         {/* Session Controls */}
-        <div className="col">
-          <h3 id="session-label">Session Length</h3>
+        <div className="col" >
+          <h3 id="session-label" className="fs-5 fs-md-3">Session Length</h3>
           <div className="d-flex justify-content-center align-items-center">
             <button
               id="session-decrement"
