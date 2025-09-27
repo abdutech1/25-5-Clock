@@ -1,0 +1,117 @@
+body{
+  background-color: #73569b !important;
+  overflow: hidden !important;
+}
+.keys{
+  display: grid;
+  overflow-x: hidden;
+  min-width: 300px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: repeat(4,73px);
+  grid-auto-rows: 70px;
+  grid-template-areas: 
+  'clear clear divide multiply'
+  'seven eight nine subtract'
+  'four five six add'
+  'one two three equal'
+  'zero zero decimal equal';
+}
+
+input[type="button"]{
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: transform 300ms ease;
+}
+input[type="button"]:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#clear{
+grid-area: clear;
+background-color: #ab3357;
+}
+#equals{
+grid-area: equal;
+background-color: #420c8d;
+}
+#divide{
+grid-area: divide;
+background-color: #999;
+}
+#multiply{
+grid-area: multiply;
+background-color: #999;
+
+}
+#add{
+grid-area: add;
+background-color: #999;
+
+}
+#subtract{
+grid-area: subtract;
+background-color: #999;
+
+}
+#decimal{
+grid-area: decimal;
+background-color: #555;
+
+}
+#zero{
+grid-area: zero;
+background-color: #555;
+
+}
+#one{
+grid-area: one;
+background-color: #555;
+
+}
+#two{
+grid-area: two;
+background-color: #555;
+
+}
+#three{
+grid-area: three;
+background-color: #555;
+
+}
+#four{
+grid-area: four;
+background-color: #555;
+
+}
+#five{
+grid-area: five;
+background-color: #555;
+
+}
+#six{
+grid-area: six;
+background-color: #555;
+
+}
+#seven{
+grid-area: seven;
+background-color: #555;
+
+}
+#eight{
+grid-area: eight;
+background-color: #555;
+
+}
+#nine{
+grid-area: nine;
+background-color: #555;
+
+}
